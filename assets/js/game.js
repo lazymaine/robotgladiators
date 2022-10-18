@@ -125,5 +125,4 @@ var endGame = function() {
     }
 };
 
-
 startGame();
