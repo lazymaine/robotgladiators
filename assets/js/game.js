@@ -1,8 +1,26 @@
 var playerName = window.prompt("What is your robot's name?")
-console.log("Our r+obot's name is "  playerName);
+var playerHealth = 100;
+var playerAttack = 10;
 
-function fight() {
-    window.alert("The fight has begun!")
+console.log(playerName, playerAttack, playerHealth);
+
+var enemyName = "Roborto"
+var enemyHealth = 50;
+var enemyAttach = 12;
+
+var fight = function() {
+    window.alert("Welcome to Robot Gladiators!")
+
+    // Subtract the value of 'playerAttacK from the value of 'enemyHealth'
+    enemyHealth = enemyHealth - playerAttack
+    console.log(
+        playerName + " attacked " + enemyName + ". " + enemyName + " now has " + enemyHealth + " health remaining."
+    )
+    // Subtract the value of 'enemyAttack' from the value of 'playerHealth'
+    playerHealth = playerHealth - enemyAttach
+    console.log(
+        enemyName + " attacked " + playerName + ". " + playerName + " now has " + playerHealth + " health remaining."
+    )
 }
 
-// fight();
+fight();
